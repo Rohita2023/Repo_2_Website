@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Domestic Violence Support Chatbot</title>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' rel='stylesheet'>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+    <!-- dropdown ui -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <div class="card card-bordered">
+            <!-- chat header -->
+            <div class="card-header">
+                <h4 class="card-title">
+                    <img src="./asserts/logo-main.jpeg" id="logo-main" alt="Logo Description" />
+                    <strong>
+                        Domestic Violence Support
+                    </strong>
+                </h4>
+            </div>            
+            <!-- back to landing page button -->
+           <a href="index.html">
+            <button class="btn btn-primary m-1">
+                <i class="fas fa-home"></i>
+            </button>
+            </a>
+            <!-- chat content -->
+            <div class="ps-container ps-theme-default ps-active-y" id="chat-content"
+                >
+                <div class="media media-chat">
+                    <img class="avatar" src="./asserts/icon.png" alt="...">
+                    <div class="media-body" id="chat-body">
+                        <!-- Chat content will be inserted here -->
+                        <!-- question -->
+                        <p>Hello! I am your Women Empowerment and Resources Assistant.</p>
+                        <p>Let's start by asking your name:</p>
+                        <!-- button -->
+                        <div style="display: flex;" id="name-input">
+                            <input type="text" class="form-control mr-2" id="user-name" placeholder="Enter your name" required>
+                            <button type="button" class="btn btn-primary" id="submit-name">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script type='text/javascript'
+        src='https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js'></script>
+    <script type='text/javascript' src='data.js'></script>
+    <script type='text/javascript' src='main-original.js'></script>
+</body>
+
+</html>

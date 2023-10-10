@@ -1,0 +1,374 @@
+/* CSS Document */
+/* TheHotline.us The Hotline Chat - Google One Box. The National Domestic Violence Hotline chat widget for the Google One Box deployment. TheHotline.org.  */
+/* application lead: Marty Hand | VP of Technology | The National Domestic Violence Hotline.*/
+/* author: Chad Cleveland | Lightbulb Web Services | www.Lightbulb.Services */
+/* copyright: Â© Copyright 2022 Lightbulb Web Services. */
+/* notice: This page was designed and is maintained to mirror the design of www.TheHotline.org. Any intellectual property 
+/* license:  https://license.lightbulb.services/the-hotline/2022/license */
+/*
+    Created: 9/13/2022
+    Last Modified: '2023-08-21 09:41';
+*/ 
+
+
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms;
+      animation-iteration-count: 1;
+      transition-duration: 0.01ms;
+      scroll-behavior: auto;
+    }
+  }
+  
+  /* --------------- */
+  
+  
+  
+  
+  
+  
+  #thl-g1b-container {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all ease-in-out .3s;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: var(--thl-purple-dk);
+  }
+  
+  
+  
+  #thl-g1b-container * {
+    margin: 0;
+    padding: 0;
+    -webkit-overflow-scrolling: touch;
+    border: none;
+    font-family: var(--thl-font-main);
+    letter-spacing: .2px;
+    box-sizing: content-box;
+    text-decoration: none;
+  }
+  
+  
+  #thl-g1b-container h1 {
+    text-align: center;
+    font-size: 58px;
+    letter-spacing: -1px;
+    margin: 60px 0 30px 0;
+    font-weight: 800;
+    color: #fff;
+  }
+  
+  
+  #thl-g1b-container h4 {
+    font-size: 26px;
+    font-weight: 800;
+    text-align: center;
+    color: #fff;
+    margin: 30px 0;
+    letter-spacing: -.5px;
+  }
+  
+  #thl-g1b-container p {
+    font-size: 23px;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: -.5px;
+  }
+  
+  #thl-g1b-container .site-btn-2 {
+    border: 2px solid #fff;
+    color: #fff;
+    margin: 50px auto;
+    background-color: transparent;
+  }
+  #thl-g1b-container .thl-privacy-notice {
+    font-weight: 800;
+    text-decoration: underline;
+    text-align: center;
+  }
+  #thl-g1b-container .thl-what-to-expect {
+    color: #fff;
+    font-size: 18px;
+  }
+  #thl-g1b-container .thl-privacy-policy {
+    color: #fff;
+    display: block;
+    margin: 20px auto 40px;
+    font-size: 14px;
+  }
+  
+  #thl-g1b-container[thl-status=active] {
+    opacity: 1;
+  }
+  
+  .app-frame {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #thl-g1b-container .thl-g1b-container {
+    /* position: fixed; */
+    width: 100%;
+    height: 100%;
+  }
+  
+  #thl-g1b-container .thl-g1b-pre-header {
+    background: #f4f4f4;
+    float: left;
+    width: 100%;
+  }
+  
+  #thl-g1b-container .thl-g1b-pre-header-item {
+    font-size: 11px;
+    font-weight: 800;
+    padding: 8px 0 6px 10px;
+    float: left;
+    color: var(--thl-black);
+    cursor: pointer;
+  }
+  
+  #thl-g1b-container .thl-g1b-header {
+    width: 100%;
+    float: left;
+    background: #fff;
+  }
+  
+  #thl-g1b-container .thl-g1b-content {
+    float: left;
+    width: 100%;
+  }
+  
+  #thl-g1b-container .thl-g1b-header-item {
+    float: left;
+  }
+  
+  
+  
+  
+  #thl-g1b-container .thl-g1b-header-item.thl-logo {
+    width: 60px;
+    height: 60px;
+    margin: 10px 0 0 15px;
+    border-radius: 7px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  #thl-g1b-container .img-hotline {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #thl-g1b-container .thl-g1b-header-item.exit-now {
+    float: right;
+    margin-right: 0;
+  }
+  
+  
+  
+  #thl-g1b-container .thl-g1b-content {
+    float: left;
+    width: 800px;
+    margin: 0 0 0 calc(50% - 400px);
+  }
+  
+  
+  
+  
+  
+  #thl-g1b-container .thl-g1b-security-alert-container {
+    position: fixed;
+    padding: 50px;
+    height: calc(100% - 100px);
+    width: calc(100% - 100px);
+    background: rgba(var(--thl-purple-dk-rgb), .8);
+    top: 0;
+    left: 0;
+    overflow: auto;
+    transition: all ease-in-out .3s;
+  }
+  #thl-g1b-container .thl-g1b-security-alert-container[thl-status=inactive] {
+    left: 100%;
+  }
+  
+  #thl-g1b-container .thl-g1b-security-alert-content {
+    background: #fff;
+    width: calc(100% - 160px);
+    max-width: 800px;
+    margin: 200px auto 0 auto;
+    padding: 50px 80px;
+    border-radius: 20px;
+  }
+  
+  #thl-g1b-container .thl-g1b-security-alert-content h1 {
+    color: var(--thl-black);
+    font-size: 42px;
+    letter-spacing: 1px;
+    margin: 0 0 30px;
+  }
+  
+  #thl-g1b-container .thl-g1b-notice {
+    margin: 30px 0 50px;
+    background-color: var(--thl-purple-lt);
+    border-radius: 20px;
+    color: #fff;
+    padding: 25px 50px;
+  }
+  #thl-g1b-container .thl-g1b-notice h4 {
+    font-size: 24px;
+  }
+  #thl-g1b-container .thl-g1b-notice p {
+    font-weight: 300;
+    font-size: 24px;
+  }
+  #thl-g1b-container .thl-g1b-notice a {
+    font-weight: 800;
+    text-decoration: underline;
+  }
+  
+  #thl-g1b-container .thl-chat-btn {
+    margin: 10px 0 10px calc(50% - 150px) !important;
+    width: 220px;
+    display: block;
+    padding: 40px !important;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 34px;
+    font-weight: 800;
+    color: #222;
+    background-color: #fff;
+    transition: color ease-in-out .5s;
+  }
+  #thl-g1b-container .thl-chat-btn:hover {
+    color: var(--thl-purple-lt);
+  }
+  #thl-g1b-container .thl-chat-btn .thl-btn-txt {
+    margin: 10px 0 20px 0;
+    display: block;
+  }
+  
+  #thl-g1b-container .thl-chat-thumbnail {
+    width: 75px;
+    height: 75px;
+    float: left;
+    background-image: url(https://lib.thehotline.us/icons/thl-icons-600.png);
+    background-color: #fff;
+    background-size: 300%;
+  }
+  
+  #thl-g1b-container .thl-chat-btn .thl-btn-caption {
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--thl-purple-dk);
+    letter-spacing: -.5px !important;
+  }
+  
+  #thl-g1b-container .thl-g1b-security-alert-content p {
+    color: var(--thl-black);
+    font-size: 17px;
+    line-height: 1.5;
+  }
+  
+  #thl-g1b-container .thl-g1b-security-alert-content p a {
+    color: var(--thl-purple-lt);
+    text-decoration: underline;
+    font-weight: 800;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @media only screen and (max-width: 900px) {
+  
+    #thl-g1b-container .thl-g1b-content {
+      width: calc(100% - 100px);
+      margin: 0 0 0 50px;
+    }
+    #thl-g1b-container .thl-g1b-notice {
+      padding: 25px;
+    }
+  
+    
+  }
+  
+  @media only screen and (max-width: 750px) {
+  
+    #thl-g1b-container h4 {
+      font-size: 25px;
+    }
+    #thl-g1b-container p {
+      font-size: 21px;
+    }
+    #thl-g1b-container .thl-g1b-notice p {
+      font-size: 22px;
+    }
+  
+  }
+  
+  
+  @media only screen and (max-width: 660px) {
+  
+    #thl-g1b-container h4 {
+      font-size: 21px;
+    }
+  
+  
+    #thl-g1b-container .thl-g1b-security-alert-content {
+      width: calc(100% - 80px);
+      padding: 30px 40px;
+    }
+  
+  }
+  
+  
+  @media only screen and (max-width: 580px) {
+  
+    #thl-g1b-container h1 {
+      font-size: 40px
+    }
+    #thl-g1b-container .thl-g1b-header-item.thl-logo {
+      width: 50px;
+      margin: 5px 0 0 8px;
+      height: 50px;
+    }
+    #thl-g1b-container .thl-g1b-header-item.exit-now {
+      margin: 0px;
+    }
+  
+  
+    #thl-g1b-container .thl-g1b-security-alert-content {
+      width: calc(100% - 40px);
+      padding: 30px 20px;
+    }
+  
+    #thl-g1b-container .thl-g1b-security-alert-container {
+      padding: 10px;
+      height: calc(100% - 20px);
+      width: calc(100% - 20px);
+    }
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

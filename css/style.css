@@ -1,0 +1,122 @@
+/* Variables */
+:root {
+
+    /* bg color */
+    --main-bg-color: white;
+    --secondary-bg-color: rgb(230,230,230);
+    --tertiary-bg-color: rgb(17,33,67);
+  
+    --sky-blue: rgb(53,167,255);
+    --blue:rgb(17,33,67);
+  
+      /* btn color */
+      --primary-btn-color: white;
+      --primary-btn-border: white;    
+      --primary-btn-hover: rgb(91,180,220);
+      --primary-btn-hover-border: rgb(91,180,220);
+  
+      /* options color */
+      --option-color: rgb(91,180,220);
+      --option-hover-color: rgb(168,62,146);
+      --option-selected-color: rgb(168,62,146);
+  
+      /* text color */
+    --text-color: black;
+    --text-color-light: white;
+    --text-color-dark: rgb(17,33,67);
+  
+    --transition-time: 0.5s;
+    
+  
+  
+  
+   
+  
+    --shadow-color: rgba(0, 0, 0, 0.1);
+  }
+
+/* .custom-logo{
+    width: 25%;
+    height: 25%
+} */
+
+
+.elementor-widget-container{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+
+.elementor-button, .wpforms-submit{
+
+  border-radius: 20px;
+  margin: 10px 0;
+  background-color: var(--primary-btn-color) !important;
+  border-color: var(--primary-btn-border) !important;
+  color: black !important;
+
+  transition: 0.2s ease-in-out !important;
+
+}
+
+
+.ast-custom-button, .wpforms-submit{
+  background-color: var(--primary-btn-color) !important;
+  border-color: var(--primary-btn-border) !important;
+  color: black !important;
+}
+
+/* fix subscription button on bottom */
+#wpforms-submit-74{
+  background-color: var(--primary-btn-color) !important;
+  border-color: var(--primary-btn-border) !important;
+  color: black !important;
+}
+
+footer{
+  background-color: var(--blue) !important;
+}
+
+
+/* fix top margin on number */
+/* p, .entry-content p{
+  margin-bottom: -4.5em;
+} */
+.entry-content p {
+  margin-bottom: -3.5em !important;
+}
+
+/* fix bottom img of tree image */
+.elementor-6 .elementor-element.elementor-element-9ad1021{
+  padding: 12px 30px 60px;
+
+}
+
+
+/* WOMEN EMPOWERMENT GROWTH list color to black */
+.elementor-icon-list-text{
+  color:black !important;
+}
+
+
+/* fix space after OUR IMPACT */
+.elementor-element-97b9f83 {
+  padding: 0 !important;
+}
+
+
+/* fix font */
+.elementor-widget-container, p , .font, button, h1, h2, h3, h4, h5, h6, 
+.elementor-heading-title, .elementor-icon-list-text, .elementor-button, 
+.elementor-accordion-title, .elementor-accordion .elementor-tab-title, 
+.elementor-accordion .elementor-tab-content, .elementor-accordion 
+.elementor-tab-content-wrapper{
+  font-family: 'Space Mono', monospace;
+}
+
+
+
+/* about content fix */
+.elementor-element-9ba22c9{
+  width: 100% !important;
+}

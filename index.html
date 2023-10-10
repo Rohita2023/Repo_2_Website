@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat with The Hotline</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="d-flex container-fluid m-0 p-0">
+    <div class="container-fluid m-0 p-0">
+      <div class="header d-flex justify-content-between align-items-center">
+        <a href="#">
+          <img
+            id="logo-main"
+            src="./asserts/logo-main.jpeg"
+            alt="National Domestic Violence Hotline"
+            class="img-fluid"
+          />
+        </a>
+        <!-- button on opposite side -->
+        <a href="/site.html">
+        <button class="btn btn-primary font">Visit Miraki</button>
+      </a>
+      </div>
+      
+      <div
+        class="content p-4 text-center bg-primary rounded full-height"
+        style="overflow: hidden"
+      >
+        <div id="center-content">
+          <h1 class="mb-4 text-white font"><b>Here For You.</b></h1>
+          <h4 class="mb-3 text-white">
+            <b class="font"
+              >You are about to connect with an Meraki's
+              Domestic Violence Hotline.</b
+            >
+          </h4>
+          <p class="mb-4 text-white font">
+            Our live Meraki provide 24/7 confidential support, education,
+            personalized safety planning and connection to local resources and
+            providers to anyone impacted by relationship abuse.
+          </p>
+
+          <!-- <div class="notice">
+          At this time, we are experiencing unusually high call/chat volume.
+          Wait times to connect with our live Meraki may be longer than 15
+          minutes. We are here 24/7 and apologize for the wait. If you are
+          looking for local providers and resources please search the
+          <a href="#" class="text-white fw-bold">Get Help</a>
+          section on our website.
+        </div> -->
+
+          <button
+            class="btn chat-btn btn-lg btn-primary mb-3 font"
+            id="chatButton"
+            onclick="startChat()"
+          >
+            Chat live now
+          </button>
+        </div>
+        <div
+          id="chat-content"
+          class="ps-container ps-theme-default ps-active-y card card-bordered m-0"
+          style="display: none"
+        >
+          <!-- insert header here with icon and Chat with Meraki -->
+          <div class="d-flex justify-content-start align-items-center mb-3">
+            <a href="#">
+              <img
+                src="./asserts/logo-main.jpeg"
+                alt="National Domestic Violence Hotline"
+                class="img-fluid logo-small"
+              />
+            </a>
+            <i class="fas fa-branch-icon fa-2x mr-2"></i>
+            <!-- Replace 'fa-branch-icon' with the actual FontAwesome icon class for your branch -->
+            <h2 class="font font-size-medium text-white">Chat with Meraki</h2>
+            <!-- Replace 'Chat with Meraki' with the actual title -->
+            <button id="closeChat" class="bg-transparent text-white">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+
+          <div class="media media-chat">
+            <div class="media-body" id="chat-body">
+              <p class="font">
+                Hello! I am your Women Empowerment and Resources Assistant.
+              </p>
+              <p class="font">Let's start by asking your name:</p>
+              <div style="display: flex" id="name-input">
+                <input
+                  type="text"
+                  class="form-control mr-2 font"
+                  id="user-name"
+                  placeholder="Enter your name"
+                  required
+                />
+                <button type="button" class="btn btn-primary" id="submit-name">
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button id="scrollUp" class="scroll-up-button btn btn-secondary">
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
